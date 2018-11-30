@@ -1,0 +1,41 @@
+body{
+    background-color: black;
+    /* text-align: center; */
+}
+h1{
+
+    color: grey;
+    font-family: 'Audiowide', cursive;
+}
+p{
+    color:purple;
+    font-size: 20px;
+    font-family: 'Audiowide', cursive;
+}
+li{
+    color: blue;
+    font-family: 'Audiowide', cursive;
+    font-size: 20px;
+}
+.borg{
+    border: solid ghostwhite;
+    text-align: center;
+}
+
+table{
+    border: solid;
+    color: grey;
+    text-align: center;
+    margin-left:auto; 
+    margin-right:auto;
+    font-family: 'Creepster', cursive;
+}
+tr{
+    border: solid;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Creepster', cursive;
+}
+th{
+    border: solid
+}
