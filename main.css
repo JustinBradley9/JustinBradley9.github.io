@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color: white;
     /* text-align: center; */
 }
 h1{
@@ -9,13 +9,13 @@ h1{
 }
 p{
     color:purple;
-    font-size: 20px;
+    font-size: 40px;
     font-family: 'Audiowide', cursive;
 }
 li{
     color: blue;
     font-family: 'Audiowide', cursive;
-    font-size: 20px;
+    font-size: 40px;
 }
 .borg{
     border: solid ghostwhite;
@@ -37,5 +37,11 @@ tr{
     font-family: 'Creepster', cursive;
 }
 th{
-    border: solid
+    border: solid;
+}
+td{
+    border: solid;
+}
+#skillpic{
+    width: 75vw;
 }
