@@ -1,0 +1,73 @@
+body{
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;  
+}
+#container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: "quest quest help3"
+    "quest quest for"
+    "pick1 pick2 pick3";
+    grid-row-gap: 5vh;
+    grid-column-gap: 2vw;
+    height: 120vh;
+}
+#box1{
+    grid-area: quest;
+    border: solid white;
+    font-size: 3em;
+}
+
+#box2{
+    grid-area: for;
+    border: solid white;
+}
+#freeze{
+    opacity: .5;
+    position: relative;
+    z-index: 5;
+    height: 50vh;
+    display: none;
+}
+#ugly{
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+#box3{
+    grid-area: pick1;
+}
+#box4{
+    grid-area: pick2;
+}
+#box5{
+    grid-area: pick3;
+}
+#box6{
+    grid-area: pick2;
+}
+#box7{
+    grid-area: pick3;
+}
+#box8{
+    grid-area: help3;
+    border: solid white;
+}
+#box9{
+    grid-area: pick1;
+}
+#box1000{
+    grid-area: pick1;
+    
+}
+.notyet{
+    display: none;
+}
+.sizeit{
+    display: none;
+    height: 50vh;
+    position: relative;
+    margin-left: 15%;
+}

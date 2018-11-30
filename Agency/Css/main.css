@@ -1,0 +1,550 @@
+
+/*index stuff*/
+.chest{
+    width: 100%;
+    display: grid;
+    background-image: url(../Images/background.png);
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 400px 150px 400px 650px;
+    /*used letter because when used full words it would not work*/
+    grid-template-areas: "b b b b b b"
+    "a a a a a a"
+    "e e e e e e"
+    "f f f f f f";
+    border: solid;
+    grid-gap: 5px;
+    text-align: center;
+
+}
+.toybox{
+    font-weight: bold;
+}
+.toybox1{
+    grid-area: a;
+    border: solid;
+}
+.toybox2{
+    grid-area: b;
+    background-image: url("../Images/logo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    animation-name: evil 10s;
+    animation-iteration-count: 1;
+    transition: 3s; 
+    animation-fill-mode: forwards;
+    animation-delay: 0s; 
+}
+.toybox2:hover{
+    display:block ;
+    transform: rotate(-360deg);
+}
+.toybox4{
+    grid-area: d;
+    border: solid;
+}
+.toybox5{
+    grid-area: e;
+    border: solid;
+    font-size: 25px;
+}
+.toybox6{
+    grid-area: f;
+    border: solid;
+}
+.omega{
+    list-style-type: none;
+}
+.fox{
+    display: inline;
+    padding: 10px;
+    font-size: 15px;
+}
+/*about us stuff*/
+.new{
+    width: 100%;
+    display: grid;
+    background-image: url(../Images/background.png);
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 400px 250px 400px 100px 825px;
+    /*used letter because when used full words it would not work*/
+    grid-template-areas: "b b b b b b"
+    "a a a a a a"
+    "e e e e e e"
+    "f f f f f f"
+    "c c c c c c";
+    border: solid;
+    grid-gap: 5px;
+    text-align: center;
+
+}
+.go{
+    font-weight: bold;
+    font-size: 25px;
+}
+.go1{
+    grid-area: a;
+    border: solid;
+}
+.go2{
+    grid-area: b;
+    background-image: url("../Images/logo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    animation-name: evil 10s;
+    animation-iteration-count: 1;
+    transition: 3s; 
+    animation-fill-mode: forwards;
+    animation-delay: 0s; 
+}
+.go2:hover{
+    display:block ;
+    transform: rotate(-360deg);
+}
+.go4{
+    grid-area: e;
+    border: solid;
+}
+.go5{
+    grid-area: f;
+    display: grid;
+    border: solid;
+}
+.new{
+    grid-area: c;
+    font-size: 25px;
+}
+.omega{
+    list-style-type: none;
+}
+.fox{
+    display: inline;
+    padding: 10px;
+    font-size: 15px;
+}
+/*support stuff*/
+.here{
+    width: 100%;
+    display: grid;
+    background-image: url(../Images/background.png);
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 400px 250px 400px 600px;
+    /*used letter because when used full words it would not work*/
+    grid-template-areas: "b b b b b b"
+    "a a a a a a"
+    "e e e e e e"
+    "f f f f f f";
+    border: solid;
+    grid-gap: 5px;
+    text-align: center;
+
+}
+.up{
+    font-weight: bold;
+    font-size: 25px;
+}
+.up1{
+    grid-area: a;
+    border: solid;
+}
+.up2{
+    grid-area: b;
+    background-image: url("../Images/logo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    animation-name: evil 10s;
+    animation-iteration-count: 1;
+    transition: 3s; 
+    animation-fill-mode: forwards;
+    animation-delay: 0s; 
+}
+.up2:hover{
+    display:block ;
+    transform: rotate(-360deg);
+}
+.up3{
+    grid-area: e;
+    border: solid;
+}
+.up4{
+    grid-area: f;
+    border: solid;
+}
+#boom{
+    height: 100px;
+    width: 200px;
+    border-radius: 50%;
+}
+/* login in page stuff*/
+.hide{
+    background-color: black;
+    background-image: url(../Images/Under-Construction.jpg);
+    width: 100%;
+    height: 1000px;
+    background-position: center;
+}
+/*modal box surrondings*/
+.classified {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+    left: 0;
+    background-color: black;
+	z-index: 9;
+    opacity:0;
+    pointer-events: none;
+    text-align: center;
+}
+.classified:target {
+	opacity:1;
+	pointer-events: auto;
+}
+/*info inside of modl box*/
+.classified > div {
+    width: 400px;
+    position: relative;
+	margin: 15% auto;
+	border-radius: 20px;
+	background: grey;
+}
+/*secret home stuff*/
+.jaeger{
+    width: 100%;
+    display: grid;
+    background-image: url("../multimedia/background.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 400px 150px 400px;
+    /*used letter because when used full words it would not work*/
+    grid-template-areas: "d d b b b b"
+    "d d a a a a"
+    "e e e e e e";
+    border: solid;
+    grid-gap: 5px;
+    text-align: center;
+    color: silver;
+    font-family: 'MedievalSharp', cursive;
+    text-shadow: 10px 10px black;
+
+}
+.wolf{
+    font-weight: bold;
+}
+.wolf1{
+    grid-area: a;
+    border: solid;
+    background-image: url(../multimedia/navigation.gif);
+    background-position: center;
+}
+.wolf2{
+    grid-area: b;
+    background-image: url("../Images/A.R.G.U.S._logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+     animation-name: evil 10s;
+     animation-iteration-count: 9;
+    transition: 3s; 
+    animation-fill-mode: forwards;
+    animation-delay: 0s;  
+}
+.wolf2:hover{
+    display:block ;
+    transform: rotate(-360deg);
+}
+.wolf4{
+    grid-area: d;
+    border: solid;
+    background-color: white
+}
+.wolf5{
+    grid-area: e;
+    border: solid;
+}
+.wolf6{
+    grid-area: f;
+    border: solid;
+}
+.omega{
+    list-style-type: none;
+}
+.fox{
+    display: inline;
+    padding: 5px;
+    font-size: 25px;
+}
+#night{
+    width: 400px;
+    height: 500px;
+}
+#norse{
+    font-size: 27px;
+}
+
+/*projects page stuff*/
+.kaiju{
+    width: 100%;
+    display: grid;
+    background-image: url("../multimedia/background.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 400px 150px 650px;
+    /*used letter because when used full words it would not work*/
+    grid-template-areas: "b b b b b b"
+    "a a a a a a"
+    "e e e e e e"
+    "d d d d d d";
+    border: solid;
+    grid-gap: 5px;
+    text-align: center;
+    color: silver;
+    font-family: 'MedievalSharp', cursive;
+    text-shadow: 10px 10px black;
+
+}
+.mech{
+    font-weight: bold;
+}
+.mech1{
+    grid-area: a;
+    border: solid;
+    background-image: url(../multimedia/navigation.gif);
+    background-position: center;
+}
+.mech2{
+    grid-area: b;
+    background-image: url("../Images/A.R.G.U.S._logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+     animation-name: evil 10s;
+     animation-iteration-count: 1;
+    transition: 3s; 
+    animation-fill-mode: forwards;
+    animation-delay: 0s;  
+}
+.mech2:hover{
+    display:block ;
+    transform: rotate(-360deg);
+}
+.mech3{
+    grid-area: d;
+    border: solid;
+    background-color: white
+}
+.mech4{
+    grid-area: e;
+    border: solid;
+}
+#titans{
+    height: 400px;
+    width: 100%;
+    font-size: 25px;
+}
+.teen{
+    border:solid;
+}
+/*threats page */
+.batman{
+    width: 100%;
+    display: grid;
+    background-image: url("../multimedia/background.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 400px 150px 160px 550px 550px;
+    /*used letter because when used full words it would not work*/
+    grid-template-areas: "b b b b b b"
+    "a a a a a a"
+    "z z z z z z"
+    "d e c f h h"
+    "i j k l h h";
+    border: solid;
+    grid-gap: 5px;
+    text-align: center;
+    color: silver;
+    font-family: 'MedievalSharp', cursive;
+    text-shadow: 10px 10px black;
+
+}
+.robin{
+    font-weight: bold;
+}
+.robin1{
+    grid-area: a;
+    border: solid;
+    background-image: url(../multimedia/navigation.gif);
+    background-position: center;
+}
+.robin2{
+    grid-area: b;
+    background-image: url("../Images/A.R.G.U.S._logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+     animation-name: evil 10s;
+     animation-iteration-count: 1;
+    transition: 3s; 
+    animation-fill-mode: forwards;
+    animation-delay: 0s;  
+}
+.robin2:hover{
+    display:block ;
+    transform: rotate(-360deg);
+}
+.robin3{
+    grid-area: z;
+    border: solid;
+}
+#answer{
+    font-size: 25px;
+    color: gold;
+}
+.robin4{
+    grid-area: c;
+    border: solid;
+}
+.robin5{
+    grid-area: d;
+    border: solid;
+}
+.robin6{
+    grid-area: e;
+    border: solid;
+}
+.robin7{
+    grid-area: f;
+    border: solid;
+}
+.robin9{
+    grid-area: h;
+    border: solid;
+}
+.robin10{
+    grid-area: i;
+    border: solid;
+}
+.robin11{
+    grid-area: j;
+    border: solid;
+}
+.robin12{
+    grid-area: k;
+    border: solid;
+}
+.robin13{
+    grid-area: l;
+    border: solid;
+}
+#threatlevel{
+    border: solid;
+    border-radius: 100%;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    position: relative;
+}
+/*task force x page*/
+.saiyan{
+    width: 100%;
+    display: grid;
+    background-image: url("../multimedia/background.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 400px 150px 375px 600px;
+    /*used letter because when used full words it would not work*/
+    grid-template-areas: "b b b b b b"
+    "a a a a a a"
+    "d d d d d d"
+    "e e e e e e";
+    border: solid;
+    grid-gap: 5px;
+    text-align: center;
+    color: silver;
+    font-family: 'MedievalSharp', cursive;
+    text-shadow: 10px 10px black;
+
+}
+.ssj{
+    font-weight: bold;
+}
+.ssj1{
+    grid-area: a;
+    border: solid;
+    background-image: url(../multimedia/navigation.gif);
+    background-position: center;
+}
+.ssj2{
+    grid-area: b;
+    background-image: url("../Images/A.R.G.U.S._logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+     animation-name: evil 10s;
+     animation-iteration-count: 1;
+    transition: 3s; 
+    animation-fill-mode: forwards;
+    animation-delay: 0s;  
+}
+.ssj2:hover{
+    display:block ;
+    transform: rotate(-360deg);
+}
+.ssj3{
+    grid-area: d;
+    border: solid;
+    font-size: 25px;
+}
+.ssj4{
+    grid-area: e;
+    border: solid;
+}
+.ssj5{
+    grid-area: f;
+    border: solid;
+}
+.omega{
+    list-style-type: none;
+}
+.fox{
+    display: inline;
+    padding: 5px;
+    font-size: 25px;
+}
+/*editing link colors for all pages*/
+a:link{
+    color: grey;
+}
+a:visited{
+    color:red;
+}
+a:hover{
+    color:black;
+}
+/*making key frames */
+/*great for transitioning images into others for cool effect*/
+@keyframes evil {
+    0% {
+        margin-left: 50%;
+     transform:rotate(0deg); 
+    }
+     50% {
+         margin-left: 90%; 
+         transform: rotate(0deg);
+    }
+    /*margin is what direction it is pushing away from, not towards*/
+     100% {
+        margin-left: 50%;
+        transform:rotate(0deg);
+    }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>War for the head</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="container">
+ <div id="box1"><p id="changeallthis"> Start your adventure. Type name into box in top right space.</p></div>
+ 
+ <div id="box8"><p id="nameem"> Name: <input type="text" id="myText" value=""></p> <br>
+     <button id="nameem2" onclick="myFunction()">Name Thyself</button> <br>
+<p id="myname"></p> <br>
+<p id="fightem"> class</p> <br>
+<p id="liveit"> healthy</p> <br> 
+<p id="magics"> 100/100</p> <br></div>
+
+     <!-- images go here   -->
+<div id="box2">
+ <img class="sizeit" id="mage1" src="images/mage.png" alt="">
+ <img class="sizeit" id="warrior1" src="images/warrior.png" alt=""> 
+<img class="sizeit" id="rogue1" src="images/rogue.png" alt="">
+ <img class="sizeit" id="ugly" src="images/ogre.png" alt="">
+ <img class="sizeit" id="freeze" src="images/icewall.png">
+ <img class="sizeit" id="druid" src="images/druid.png">
+ <img class="sizeit" id="warlock" src="images/warlock.jpg">
+ <img class="sizeit" id="summoner" src="images/summoner.jpg">
+ <img class="sizeit" id="knight" src="images/knight.png">
+ <img class="sizeit" id="beserker" src="images/beserker.jpeg">
+ <img class="sizeit" id="paladin" src="images/paladin.png">
+ <img class="sizeit" id="assassin" src="images/assassin.jpg">
+ <img class="sizeit" id="thief" src="images/thief.jpeg">
+ <img class="sizeit" id="ninja" src="images/ninja.jpg">
+</div>
+<!-- images done -->
+
+<button  id="box3" onclick="first1()"> <p>Warrior</p></button>
+<button id="box4" onclick="second1()"> <p >Mage</p></button>
+<button id="box5" onclick="third1()"> <p >Rogue</p></button>
+<!-- warrior path -->
+<button class="notyet"  id="box6" onclick="first2()" > <p>Beserker</p></button>
+<!-- beserker path -->
+<button class="notyet"  id="box16" onclick="first21()" > <p>Begin your adventure in the Forest</p></button>
+<button class="notyet"  id="box17" onclick="first22()" > <p>Go to town to gather supplies</p></button>
+<button class="notyet"  id="box18" onclick="first23()" > <p>Go to town to get information</p></button>
+
+<button class="notyet"  id="box7" onclick="first3()" > <p>Paladin</p></button>
+<!-- paladin path -->
+<button class="notyet"  id="box19" onclick="first31()" > <p>Go to church and recieve Blessings</p></button>
+<button class="notyet"  id="box20" onclick="first32()" > <p>Go to orphanage</p></button>
+<button class="notyet"  id="box21" onclick="first33()" > <p>Leave for demonic Forest</p></button>
+
+<button class="notyet"  id="box9" onclick="first4()" > <p>Knight</p></button>
+<!-- knight path -->
+<button class="notyet"  id="box22" onclick="first41()" > <p>Go get armor and weapons from armory</p></button>
+<button class="notyet"  id="box23" onclick="first42()" > <p>Patrol town with squad</p></button>
+<button class="notyet"  id="box24" onclick="first43()" > <p>Go search for princesses dog in forest</p></button>
+<!-- mage path -->
+<button class="notyet" id="box10" onclick="second2()"> <p >Warlock</p></button>
+<!-- warlock path -->
+<button class="notyet"  id="box25" onclick="second21()" > <p>Go to your room and grab your grimore</p></button>
+<button class="notyet"  id="box26" onclick="second22()" > <p>Visit the institution's library</p></button>
+<button class="notyet"  id="box27" onclick="second23()" > <p>Go to the fire pits and have match against breddit</p></button>
+
+<button class="notyet" id="box11" onclick="second3()"> <p >Summoner</p></button>
+<button class="notyet" id="box12" onclick="second4()"> <p >Druid</p></button>
+<!-- rogue path -->
+<button class="notyet" id="box13" onclick="third2()"> <p >Shinobi</p></button>
+<button class="notyet" id="box14" onclick="third3()"> <p >Assassin</p></button>
+<!-- thief path -->
+<button class="notyet" id="box15" onclick="third4()"> <p >Thief</p></button>
+
+<!-- died -->
+<button class="notyet"  id="box1000" onclick="restart()" > <p>Too bad</p></button>
+ 
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

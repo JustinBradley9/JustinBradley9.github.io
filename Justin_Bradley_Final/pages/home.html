@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="../main.css">
+    <link href="https://fonts.googleapis.com/css?family=MedievalSharp" rel="stylesheet">
+</head>
+<body>
+    <div class="container2">
+        <div class="red">
+        <h2>Draco Dormiens Nunquam Titillandus</h2>
+        <ul>
+            <li><div class="navigation">
+                <button class="drop"> General Information</button>
+                <div class="nav">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+ </div></div></li>
+            <li><div class="navigation">
+ <button class="drop">Education</button>
+ <div class="nav">
+ <a href="schoolyear.html">School Year</a>
+ <a href="classes.html">Classes</a>
+     </div></div> </li>
+            <li><div class="navigation">
+ <button class="drop">Residency And Housing</button>
+ <div class="nav">
+ <a href="houses.html">Houses</a>
+     </div></div></li>
+            <li><div class="navigation">
+ <button class="drop">Faculty</button>
+ <div class="nav">
+ <a href="faculty.html">Faculty</a>
+     </div></div></li>
+        </ul>   
+        <video class="musichidden" id="playmeplease" loop id="theme">
+                <source  src="../images/pottermore.mp4" type="video/mp4"></video> 
+    </div>
+    <div class="next1">
+        <!-- from gifer.com -->
+            <img src="../images/icemagic.gif" name="show" id="slide"> <br>
+            <!-- images from openclipart.com -->
+            <button class="press" onclick=" return changepic(-1)"><img class="wands" src="../images/wand.png" alt=""></button> 
+            <button class="press" onclick="changepic(1)"> <img class="wands" src="../images/wand2.png" alt=""></button>
+    </div> 
+    <div class="next2">
+    
+            <button  onclick="appear(), appear2()"  id="spell1"> <h1>Textus Appearus</h1></button>
+            <p id="words1"></p>
+            <p id="words2"></p>
+            <!-- from tumblr -->
+            <div> <img  id="escope1" src="../images/e1.gif"></div>
+    </div>   
+    </div>
+    <script src="../app.js"></script>
+</body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Houses</title>
+    <link rel="stylesheet" href="../main.css">
+</head>
+<body onload="getstartedfred()">
+    <!-- thr navigation bar -->
+     <div class="container5">
+        <div class="red">
+        <h2>Draco Dormiens Nunquam Titillandus</h2>
+        <ul>
+        <li><div class="navigation">
+        <button class="drop"> General Information</button>
+        <div class="nav">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        </div></div></li>
+            <li><div class="navigation">
+                <button class="drop">Education</button>
+                    <div class="nav">
+                    <a href="schoolyear.html">School Years</a>
+                    <a href="classes.html">Classes</a>
+                    </div></div> </li>
+            <li><div class="navigation">
+                    <button class="drop">Residency And Housing</button>
+                    <div class="nav">
+                    <a href="houses.html">Houses</a>
+                    </div></div></li>
+             <li><div class="navigation">
+            <button class="drop">Faculty</button>
+                <div class="nav">
+                <a href="faculty.html">Faculty</a>
+                </div></div></li>
+                        </ul>    
+                        <video class="musichidden" id="playmeplease" loop id="theme">
+                                <source  src="../images/pottermore.mp4" type="video/mp4"></video>
+                    </div>
+<!-- personality quiz with alpha version on the sorting hat -->
+            <div class="sort">
+                <div class="formdiv">
+
+<form name="houseForm">
+<h1 class="style1">Sorting Quiz</h1><br>
+<p>Hogwarts is divided into four houses each with destinct personalities within them. We officially test you with the sorting hat which is capable of telling your truest thoughts and feelings and will put you in the house accordingly.
+    However we also offer this test to narrow down which house you will placed in based off of what you answer. While it is not 100% accurate it does give you a general idea. Houses collect points from doing various activites and and competitions and
+    the house with the most points at the end of the year will have bonus points on their grades. Houses also determine where you shall stay when here. The 4 houses are 
+   <span id="badger"> Hufflepuff</span> ,<span id="eagle"> RavenClaw</span> , <span id="lion"> Gryffindor</span> ,And <span id="snake"> Slytherin</span>
+</p>
+                            
+<h3 class="style3">1. When do you feel your best?</h3><br>
+<input type="radio" name="q1" onClick="saver(1,12)">in the morning<br>
+<input type="radio" name="q1" onClick="saver(1,8)">during the afternoon and early evening<br>
+<input type="radio" name="q1" onClick="saver(1,4)">late at night<br>
+                            
+<h3 class="style3">2. What motivates you?</h3><br>
+<input type="radio" name="q2" onClick="saver(2,9)" >Fear of dissaponting loved ones<br>
+<input type="radio" name="q2" onClick="saver(2,5)">Hope that I'll reach my goals<br>
+<input type="radio" name="q2" onClick="saver(2,1)">My thirst for knowledge<br>
+<input type="radio" name="q2" onClick="saver(2,10)">My Pride<br>
+<input type="radio" name="q2" onClick="saver(2,2)">I just go with the wind like a cloud<br>
+
+                            
+<h3 class="style3">3.When listening to people you are usually</h3><br>
+                        
+<input type="radio" name="q3" onClick="saver(3,8)">Frowning<br>
+<input type="radio" name="q3" onClick="saver(3,4)">Smiling<br>
+<input type="radio" name="q3" onClick="saver(3,5)">Laughing<br>
+<input type="radio" name="q3" onClick="saver(3,3)">Daydreaming<br>
+<input type="radio" name="q3" onClick="saver(3,2)">Have neautral look on your face<br>
+
+                            
+<h3 class="style3">4. When relaxing, you sit with</h3><br>
+                        
+<input type="radio" name="q4" onClick="saver(4,4)">your knees bent with your legs neatly side by side<br>
+<input type="radio" name="q4" onClick="saver(4,6)">your legs crossed<br>
+<input type="radio" name="q4" onClick="saver(4,2)">your legs stretched out or straight<br>
+<input type="radio" name="q4" onClick="saver(4,1)">one leg curled under you<br>
+<input type="radio" name="q4" onClick="saver(4,9)">you don't sit, you either lay down or stand<br>
+
+                            
+<h3 class="style3">5. What animal do you relate to most?</h3><br>
+                        
+<input type="radio" name="q5" onClick="saver(5,6)">Ant<br>
+<input type="radio" name="q5" onClick="saver(5,1)">Wolf<br>
+<input type="radio" name="q5" onClick="saver(5,3)">Bears<br>
+<input type="radio" name="q5" onClick="saver(5,5)">Heron<br>
+<input type="radio" name="q5" onClick="saver(5,10)">Pheonix<br>
+<input type="radio" name="q5" onClick="saver(5,2)">Sphinx<br>
+<input type="radio" name="q5" onClick="saver(5,7)">Elephant<br>
+
+
+                            
+<h3 class="style3">6. What do you do in your free time?</h3><br>
+                        
+<input type="radio" name="q6" onClick="saver(6,2)">Read<br>
+<input type="radio" name="q6" onClick="saver(6,3)">Study<br>
+<input type="radio" name="q6" onClick="saver(6,7)">Exercise<br>
+<input type="radio" name="q6" onClick="saver(6,6)">Play pranks<br>
+<input type="radio" name="q6" onClick="saver(6,10)">Make money<br>
+<input type="radio" name="q6" onClick="saver(6,3)">Practice Magic<br>
+<input type="radio" name="q6" onClick="saver(6,5)">Eat<br>
+
+                            
+<h3 class="style3"><br>7.What is most important for a wizard or witch</h3><br>
+                        
+<input type="radio" name="q7" onClick="saver(7,2)">knowledge<br>
+<input type="radio" name="q7" onClick="saver(7,7)">strength<br>
+<input type="radio" name="q7" onClick="saver(7,4)">friends<br>
+
+                            
+<h3 class="style3">8. Which of the following colors do you like most?</h3><br>
+                        
+<input type="radio" name="q8" onClick="saver(8,6)" >red or orange<br>
+<input type="radio" name="q8" onClick="saver(8,11)" >black<br>
+<input type="radio" name="q8" onClick="saver(8,5)" >yellow or light blue<br>
+<input type="radio" name="q8" onClick="saver(8,13)" >green<br>
+<input type="radio" name="q8" onClick="saver(8,3)" >dark blue or purple<br>
+<input type="radio" name="q8" onClick="saver(8,10)" >white<br>
+<input type="radio" name="q8" onClick="saver(8,9)" >brown or gray<br>
+
+                            
+<h3 class="style3">9. When you are in bed at night, in those last few moments before going to sleep, you lie</h3><br>
+                        
+<input type="radio" name="q9" onClick="saver(9,7)" >stretched out on your back<br>
+<input type="radio" name="q9" onClick="saver(9,6)" >stretched out face down on your stomach<br>
+<input type="radio" name="q9" onClick="saver(9,4)" >on your side, slightly curled<br>
+<input type="radio" name="q9" onClick="saver(9,2)" >with your head on one arm<br>
+<input type="radio" name="q9" onClick="saver(9,1)" >with your head under the covers<br>
+
+                            
+<h3 class="style3"><br>10. You often dream that you are</h3><br>
+                        
+<input type="radio" name="q10" onClick="saver(10,4)" >falling<br>
+<input type="radio" name="q10" onClick="saver(10,2)" >fighting or struggling<br>
+<input type="radio" name="q10" onClick="saver(10,3)" >searching for something or somebody<br>
+<input type="radio" name="q10" onClick="saver(10,5)" >flying or floating<br>
+<input type="radio" name="q10" onClick="saver(10,6)" >you usually have dreamless sleep<br>
+<input type="radio" name="q10" onClick="saver(10,1)" >your dreams are always pleasant.<br>
+
+<input id="toosmall" type="button" name="result" value="Click here to see your result" onClick="total()"> <br>
+</form></div>
+<div class="notform">
+    <!-- make their own pages if you get the time to -->
+   <a href="#openModal1"> <div id="snake2"></div></a>
+   <a href="#openModal2"> <div id="badger2"></div></a>
+   <a href="#openModal3"> <div id="lion2"></div></a>
+   <a href="#openModal4"> <div id="eagle2"></div></a>
+   
+   <!-- modals of each house to be opened when clicked on -->
+   <div id="openModal1" class="modal">
+        <div class="portal">
+        <a href="#close">X</a>
+        <h1>Slytherin</h1>
+        <h2>Founder</h2>
+        <p>Salazar Slytherin</p>
+        <h2>House Symbol</h2>
+        <img alt="serpent" src="../images/serpent.png" width="20%" height="20%">
+        <h2>House Colors</h2>
+        <p>Silver and Green</p>
+        <h2>Description of House</h2>
+        <p>Values ambition, leadership, cunning, determination, and resourcefulness.</p>
+    </div>
+</div>
+<div id="openModal2" class="modal">
+        <div class="portal">
+        <a href="#close">X</a>
+        <h2>Hufflepuff</h2>
+        <h2>Founder</h2>
+        <p> Helga Hufflepuff</p>
+        <h2>House Symbol</h2>
+        <img alt="badger" src="../images/badger.png" width="20%" height="20%">
+        <h2>House Colors</h2>
+        <p>Yellow and Black</p>
+        <h2>Description of House</h2>
+        <p>Well known for loyalty, patience, hard work, fair-play, honesty, and tolerance.</p>
+    </div>
+</div>
+<div id="openModal3" class="modal">
+        <div class="portal">
+        <a href="#close">X</a>
+        <h2>Gryffindor</h2>
+        <h2>Founder</h2>
+        <p>Godric Gryffindor</p>
+        <h2>House Symbol</h2>
+        <img alt="lion" src="../images/lion.png" width="20%" height="20%">
+        <h2>House Colors</h2>
+        <p>Crimson and Gold</p>
+        <h2>Description of House</h2>
+        <p>Well known for courage, bravery, daring, nerve, and chivalry.</p>
+    </div>
+</div>
+<div id="openModal4" class="modal">
+        <div class="portal">
+        <a href="#close">X</a>
+        <h2>RavenClaw</h2>
+        <h2>Founder</h2>
+        <p>Rowena RavenClaw</p>
+        <h2>House Symbol</h2>
+        <img alt="eagle" src="../images/eagle.png" width="20%" height="20%">
+        <h2>House Colors</h2>
+        <p>Blue and Bronze</p>
+        <h2>Description of House</h2>
+        <p>Values intelligence, wit, cleverness, creativity, and wisdom.</p>
+    </div>
+</div>
+</div>
+</div>
+
+                            
+                            
+<!-- <div class="evil">
+                            
+div id="openModal" class="content">
+<div>
+    <a href="#close">X</a>
+    <h2>2</h2>
+    <p>work dammit! work!
+    </p>
+</div>
+ </div>
+ <div id="demon"><a href="#openModal"><img src="images/2x3__25_.0.png" id="king"> </a></div>
+ <div id="rat"><a href="#openModal"><img src="images/2x3__25_.0.png" id="boss"> </a></div> -->
+
+
+            </div>
+            </div>
+
+    <script src="../app.js"></script>
+</body>
+</html>
