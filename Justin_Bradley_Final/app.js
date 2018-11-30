@@ -9,11 +9,11 @@ var speed = 100;
       //type out whichever part of string the function is on which is charAt(i)
     document.getElementById("up1").innerHTML += welcome.charAt(i);
     //moving i forward
-    i++;
+    i++;}
     //telling function not to stop until full string is completed
     setTimeout(typer, speed);
   }
-}
+
 
 
 //appearus spell part one to summon words from the void
@@ -38,7 +38,7 @@ var magic2 = 'Hogwarts School of Witchcraft and Wizardry is the British wizardin
 'Established around the 10th century, Hogwarts is considered to be one of the finest magical institutions in the Wizarding World, though other notable schools included Beauxbatons Academy of Magic in France, the Durmstrang Institute in Scandinavia, and Ilvermorny School of Witchcraft and Wizardry in the United States.' +
 "Children with magical abilities are enrolled at birth, and acceptance is confirmed by owl post at age eleven. However, if the child in question is a Muggle-born, a professor from the school would come and inform the child's parents." +
 "The school's motto is Draco Dormiens Nunquam Titillandus (Draco Dormiens Nvnqvam Titillandvs)" + ', which, translated from Latin, means "Never tickle a sleeping dragon".';
-var sped = 20;
+var sped = 50;
 var appear2 = () => {
   if (c < magic2.length) {
       //return to i index in string
